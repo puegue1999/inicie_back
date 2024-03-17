@@ -1,0 +1,11 @@
+version: '1'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: inicie_back_container
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html
